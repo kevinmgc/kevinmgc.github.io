@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="assets/img/favicon-k.ico"
+            type="image/x-icon"
+        />
+        <title>Kevin Gomez</title>
+        <link rel="stylesheet" href="css/customs-styles.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            bgColor: "#0a192f",
+                            primaryColor: '#ccd6f6',
+                            secondaryColor: '#8892b0',
+                            gray: "#a8b2d1",
+                            waterGreen: "#64ffda",
+                            waterGreenHover: '#64ffdb17',
+                        },
+                        fontFamily: {
+                            sans: ["Calibri", "sans-serif"],
+                            mono: ["SFMono", "monospace"],
+                        },
+                    },
+                },
+            };
+        </script>
+    </head>
+    <body class="bg-bgColor flex flex-col items-center">
+        <!-- Right email -->
+        <div class="hidden md:flex fixed bottom-0 right-10 lg:right-14 flex-col items-center">
+            <p>
+                <a
+                    href="mailto:kevingomez9730@gmail.com"
+                    class="text-white text-gray font-mono hover:text-waterGreen hover:-translate-y-1 duration-300 text-orientation"
+                    >kevingomez9730@gmail.com</a
+                >
+            </p>
+            <div class="pt-24 bg-white w-[1px] mt-5 bg-gray"></div>
+        </div>
+        <!-- Left icons -->
+        <div class="hidden md:flex fixed bottom-0 left-10 lg:left-14 flex-col items-center">
+            <ul class="flex flex-col gap-7">
+                <li>
+                    <a href="https://github.com/kevinmgc">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            role="img"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="feather feather-github w-6 text-gray hover:text-waterGreen hover:-translate-y-1 duration-300"
+                        >
+                            <title>GitHub</title>
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                            ></path>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            role="img"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="feather feather-instagram w-6 text-gray hover:text-waterGreen hover:-translate-y-1 duration-300"
+                        >
+                            <title>Instagram</title>
+                            <rect
+                                x="2"
+                                y="2"
+                                width="20"
+                                height="20"
+                                rx="5"
+                                ry="5"
+                            ></rect>
+                            <path
+                                d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                            ></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            role="img"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="feather feather-twitter w-6 text-gray hover:text-waterGreen hover:-translate-y-1 duration-300"
+                        >
+                            <title>Twitter</title>
+                            <path
+                                d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                            ></path>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://www.linkedin.com/in/kevin-gomez-b99309242/"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            role="img"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="feather feather-linkedin w-6 text-gray hover:text-waterGreen hover:-translate-y-1 duration-300"
+                        >
+                            <title>LinkedIn</title>
+                            <path
+                                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                            ></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            role="img"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="feather feather-codepen w-6 text-gray hover:text-waterGreen hover:-translate-y-1 duration-300"
+                        >
+                            <title>CodePen</title>
+                            <polygon
+                                points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"
+                            ></polygon>
+                            <line x1="12" y1="22" x2="12" y2="15.5"></line>
+                            <polyline points="22 8.5 12 15.5 2 8.5"></polyline>
+                            <polyline points="2 15.5 12 8.5 22 15.5"></polyline>
+                            <line x1="12" y1="2" x2="12" y2="8.5"></line>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <div class="pt-24 bg-white w-[1px] mt-5 bg-gray"></div>
+        </div>
+        <!-- Header -->
+        <header class="flex justify-between items-center container  h-24 sticky top-0 px-5">
+            <h2 class="text-waterGreen text-4xl font-mono">KG</h2>
+            <div class="flex items-center gap-7">
+                <ul class="hidden md:flex gap-7 text-gray text-base tracking-wider">
+                    <li><a href="#about" class="hover:text-waterGreen"><span class="text-waterGreen">01. </span>About</a></li>
+                    <li><a href="#experience" class="hover:text-waterGreen"><span class="text-waterGreen">02. </span>Experience</a></li>
+                    <li><a href="#work" class="hover:text-waterGreen"><span class="text-waterGreen">03. </span>Work</a></li>
+                    <li><a href="#contact" class="hover:text-waterGreen"><span class="text-waterGreen">04. </span>Contact</a></li>                  
+                </ul>
+                <a href="https://github.com/kevinmgc" class="hidden md:block text-waterGreen text-base tracking-wider border-[1px] border-waterGreen rounded px-4 py-2 hover:bg-waterGreenHover">Resume</a>
+            </div>
+        </header>
+        <!-- Hero -->
+        <div class="h-[80vh] container px-5 md:px-20 lg:px-32 flex flex-col items-start justify-center">
+            <p class="text-waterGreen text-lg tracking-wide font-mono">Hi, my name is</p>
+            <h1 class="text-primaryColor text-4xl md:text-6xl lg:text-7xl font-bold mt-1 md:mt-4">Kevin Gomez.</h1>
+            <h2 class="text-secondaryColor text-4xl md:text-6xl lg:text-7xl font-bold mb-2 md:mb-6">I build things for the web.</h2>
+            <p class="text-secondaryColor text-lg max-w-[500px]">I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at <span class="text-waterGreen">Upstatement.</span></p>
+            <a href="#" class="mt-6 md:mt-10 text-waterGreen text-lg border rounded py-4 px-8">Check out my course!</a>
+        </div>
+    </body>
+</html>
