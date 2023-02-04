@@ -47,10 +47,12 @@
         url("../assets/fonts/SF-Mono/SFMonoHeavy.woff") format("woff");
 }
 
-.text-orientation {
+#text-orientation {
     writing-mode: vertical-rl;
     text-orientation: sideways;
 }
+
+
 
 #profile-img {
     position: relative;

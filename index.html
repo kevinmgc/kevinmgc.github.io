@@ -39,7 +39,8 @@
     <div class="hidden md:flex fixed bottom-0 right-10 lg:right-14 flex-col items-center">
         <p>
             <a href="mailto:kevingomez9730@gmail.com"
-                class="text-white text-gray font-mono hover:text-waterGreen hover:-translate-y-1 duration-300 text-orientation">kevingomez9730@gmail.com</a>
+                class="text-white text-gray font-mono hover:text-waterGreen hover:-translate-y-1 duration-300"
+                id="text-orientation">kevingomez9730@gmail.com</a>
         </p>
         <div class="pt-24 bg-white w-[1px] mt-5 bg-gray"></div>
     </div>
@@ -112,7 +113,7 @@
         <div class="pt-24 bg-white w-[1px] mt-5 bg-gray"></div>
     </div>
     <!-- Header -->
-    <header class="flex justify-between items-center container h-24 sticky top-0 px-5 bg-bgColor z-40">
+    <header class="container flex justify-between items-center h-20 px-5 bg-bgColor z-40">
         <h2 class="text-waterGreen text-4xl font-mono">KG</h2>
         <div class="flex items-center gap-7">
             <ul class="hidden md:flex gap-7 text-gray text-base tracking-wider">
@@ -134,9 +135,12 @@
             <a href="https://github.com/kevinmgc"
                 class="hidden md:block text-waterGreen text-base tracking-wider border-[1px] border-waterGreen rounded px-4 py-2 hover:bg-waterGreenHover">Resume</a>
         </div>
+        <div class="w-[40px] h-[40px] border">
+            <div id="responsive-bottom"></div>
+        </div>
     </header>
     <!-- Hero -->
-    <div class="py-5 md:py-16 lg:h-[80vh] container px-5 md:px-24 lg:px-32 flex flex-col items-start justify-center">
+    <div class="container flex flex-col items-start justify-center py-5 md:py-16 lg:h-[80vh] px-5 md:px-24 lg:px-32">
         <p class="text-waterGreen text-lg tracking-wide font-mono">
             Hi, my name is
         </p>
@@ -152,7 +156,9 @@
             Currently, I’m focused on building accessible, human-centered
             products at <span class="text-waterGreen">Upstatement.</span>
         </p>
-        <a href="#" class="mt-6 md:mt-10 text-waterGreen text-lg border rounded py-4 px-8">Check out my course!</a>
+        <a href="#"
+            class="py-3 px-6 md:py-4 md:px-8 mt-6 md:mt-10 text-waterGreen text-lg border rounded font-mono hover:bg-waterGreenHover">Check
+            out my course!</a>
     </div>
     <!-- About me -->
     <div class="flex flex-col lg:flex-row items-center justify-center container px-4 md:px-24 lg:px-40 py-10 md:py-16">
@@ -366,7 +372,7 @@
                     </a>
                 </div>
             </div>
-            <div class="md:w-3/5 md:pr-5 lg:pr-0 hidden md:flex items-center justify-center">
+            <div class="md:w-3/5 md:pl-5 lg:pr-0 hidden md:flex items-center justify-center">
                 <div id="project-img">
                     <img src="assets/img/projectExample.png" alt="Project 1" class="w-full">
                 </div>
@@ -424,12 +430,12 @@
         </div>
     </div>
     <!-- Projects WordPress -->
-    <div class="container py-10 md:py-16 px-5 md:px-24 lg:px-32">
+    <div class="container py-10 md:py-16 px-5 md:px-20 lg:px-32">
         <div class="flex flex-col items-center">
             <h2 class="text-primaryColor text-2xl md:text-4xl font-bold">Other Noteworthy Projects</h2>
             <p class="text-waterGreen font-mono mt-4">view the archive</p>
         </div>
-        <div class="grid grid-cols-3 auto-rows-max gap-4 py-10 md:py-16">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 auto-rows-max gap-4 py-10 md:py-16">
             <!-- Project 1 -->
             <a href="#" class="flex duration-300" id="hover">
                 <div class="flex flex-col justify-between p-6 bg-bgColor3">
@@ -467,185 +473,203 @@
                 </div>
             </a>
             <!-- Project 2 -->
-        <a href="#" class="flex duration-300" id="hover">
-            <div class="flex flex-col justify-between p-6 bg-bgColor3">
-                <div class="flex justify-between items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-folder w-10 text-waterGreen">
-                        <title>Folder</title>
-                        <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
-                        </path>
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-external-link w-6 text-gray hover:text-waterGreen">
-                        <title>External Link</title>
-                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                        <polyline points="15 3 21 3 21 9"></polyline>
-                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                    </svg>
+            <a href="#" class="flex duration-300" id="hover">
+                <div class="flex flex-col justify-between p-6 bg-bgColor3">
+                    <div class="flex justify-between items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-folder w-10 text-waterGreen">
+                            <title>Folder</title>
+                            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-external-link w-6 text-gray hover:text-waterGreen">
+                            <title>External Link</title>
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </div>
+                    <div class="py-5">
+                        <h2 class="mb-4 text-primaryColor text-2xl font-bold leading-7">Integrating Algolia Search with
+                            WordPress Multisite
+                        </h2>
+                        <p class="text-secondaryColor leading-6">Building a custom multisite compatible WordPress plugin
+                            to build global
+                            search with Algolia
+                        </p>
+                    </div>
+                    <div class="flex gap-5 text-secondaryColor font-mono">
+                        <small>Algolia</small>
+                        <small>WordPress</small>
+                        <small>PHP</small>
+                    </div>
                 </div>
-                <div class="py-5">
-                    <h2 class="mb-4 text-primaryColor text-2xl font-bold leading-7">Integrating Algolia Search with
-                        WordPress Multisite
-                    </h2>
-                    <p class="text-secondaryColor leading-6">Building a custom multisite compatible WordPress plugin
-                        to build global
-                        search with Algolia
-                    </p>
-                </div>
-                <div class="flex gap-5 text-secondaryColor font-mono">
-                    <small>Algolia</small>
-                    <small>WordPress</small>
-                    <small>PHP</small>
-                </div>
-            </div>
-        </a>
+            </a>
             <!-- Project 3 -->
-        <a href="#" class="flex duration-300" id="hover">
-            <div class="flex flex-col justify-between p-6 bg-bgColor3">
-                <div class="flex justify-between items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-folder w-10 text-waterGreen">
-                        <title>Folder</title>
-                        <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
-                        </path>
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-external-link w-6 text-gray hover:text-waterGreen">
-                        <title>External Link</title>
-                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                        <polyline points="15 3 21 3 21 9"></polyline>
-                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                    </svg>
+            <a href="#" class="flex duration-300" id="hover">
+                <div class="flex flex-col justify-between p-6 bg-bgColor3">
+                    <div class="flex justify-between items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-folder w-10 text-waterGreen">
+                            <title>Folder</title>
+                            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-external-link w-6 text-gray hover:text-waterGreen">
+                            <title>External Link</title>
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </div>
+                    <div class="py-5">
+                        <h2 class="mb-4 text-primaryColor text-2xl font-bold leading-7">Integrating Algolia Search with
+                            WordPress Multisite
+                        </h2>
+                        <p class="text-secondaryColor leading-6">Building a custom multisite compatible WordPress plugin
+                            to build global
+                            search with Algolia
+                        </p>
+                    </div>
+                    <div class="flex gap-5 text-secondaryColor font-mono">
+                        <small>Algolia</small>
+                        <small>WordPress</small>
+                        <small>PHP</small>
+                    </div>
                 </div>
-                <div class="py-5">
-                    <h2 class="mb-4 text-primaryColor text-2xl font-bold leading-7">Integrating Algolia Search with
-                        WordPress Multisite
-                    </h2>
-                    <p class="text-secondaryColor leading-6">Building a custom multisite compatible WordPress plugin
-                        to build global
-                        search with Algolia
-                    </p>
-                </div>
-                <div class="flex gap-5 text-secondaryColor font-mono">
-                    <small>Algolia</small>
-                    <small>WordPress</small>
-                    <small>PHP</small>
-                </div>
-            </div>
-        </a>
+            </a>
             <!-- Project 4 -->
-        <a href="#" class="flex duration-300" id="hover">
-            <div class="flex flex-col justify-between p-6 bg-bgColor3">
-                <div class="flex justify-between items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-folder w-10 text-waterGreen">
-                        <title>Folder</title>
-                        <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
-                        </path>
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-external-link w-6 text-gray hover:text-waterGreen">
-                        <title>External Link</title>
-                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                        <polyline points="15 3 21 3 21 9"></polyline>
-                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                    </svg>
+            <a href="#" class="flex duration-300" id="hover">
+                <div class="flex flex-col justify-between p-6 bg-bgColor3">
+                    <div class="flex justify-between items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-folder w-10 text-waterGreen">
+                            <title>Folder</title>
+                            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-external-link w-6 text-gray hover:text-waterGreen">
+                            <title>External Link</title>
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </div>
+                    <div class="py-5">
+                        <h2 class="mb-4 text-primaryColor text-2xl font-bold leading-7">Integrating Algolia Search with
+                            WordPress Multisite
+                        </h2>
+                        <p class="text-secondaryColor leading-6">Building a custom multisite compatible WordPress plugin
+                            to build global
+                            search with Algolia
+                        </p>
+                    </div>
+                    <div class="flex gap-5 text-secondaryColor font-mono">
+                        <small>Algolia</small>
+                        <small>WordPress</small>
+                        <small>PHP</small>
+                    </div>
                 </div>
-                <div class="py-5">
-                    <h2 class="mb-4 text-primaryColor text-2xl font-bold leading-7">Integrating Algolia Search with
-                        WordPress Multisite
-                    </h2>
-                    <p class="text-secondaryColor leading-6">Building a custom multisite compatible WordPress plugin
-                        to build global
-                        search with Algolia
-                    </p>
-                </div>
-                <div class="flex gap-5 text-secondaryColor font-mono">
-                    <small>Algolia</small>
-                    <small>WordPress</small>
-                    <small>PHP</small>
-                </div>
-            </div>
-        </a>
+            </a>
             <!-- Project 5 -->
-        <a href="#" class="flex duration-300" id="hover">
-            <div class="flex flex-col justify-between p-6 bg-bgColor3">
-                <div class="flex justify-between items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-folder w-10 text-waterGreen">
-                        <title>Folder</title>
-                        <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
-                        </path>
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-external-link w-6 text-gray hover:text-waterGreen">
-                        <title>External Link</title>
-                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                        <polyline points="15 3 21 3 21 9"></polyline>
-                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                    </svg>
+            <a href="#" class="flex duration-300" id="hover">
+                <div class="flex flex-col justify-between p-6 bg-bgColor3">
+                    <div class="flex justify-between items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-folder w-10 text-waterGreen">
+                            <title>Folder</title>
+                            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-external-link w-6 text-gray hover:text-waterGreen">
+                            <title>External Link</title>
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </div>
+                    <div class="py-5">
+                        <h2 class="mb-4 text-primaryColor text-2xl font-bold leading-7">Integrating Algolia Search with
+                            WordPress Multisite
+                        </h2>
+                        <p class="text-secondaryColor leading-6">Building a custom multisite compatible WordPress plugin
+                            to build global
+                            search with Algolia
+                        </p>
+                    </div>
+                    <div class="flex gap-5 text-secondaryColor font-mono">
+                        <small>Algolia</small>
+                        <small>WordPress</small>
+                        <small>PHP</small>
+                    </div>
                 </div>
-                <div class="py-5">
-                    <h2 class="mb-4 text-primaryColor text-2xl font-bold leading-7">Integrating Algolia Search with
-                        WordPress Multisite
-                    </h2>
-                    <p class="text-secondaryColor leading-6">Building a custom multisite compatible WordPress plugin
-                        to build global
-                        search with Algolia
-                    </p>
-                </div>
-                <div class="flex gap-5 text-secondaryColor font-mono">
-                    <small>Algolia</small>
-                    <small>WordPress</small>
-                    <small>PHP</small>
-                </div>
-            </div>
-        </a>
+            </a>
             <!-- Project 6 -->
-        <a href="#" class="flex duration-300" id="hover">
-            <div class="flex flex-col justify-between p-6 bg-bgColor3">
-                <div class="flex justify-between items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-folder w-10 text-waterGreen">
-                        <title>Folder</title>
-                        <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
-                        </path>
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-external-link w-6 text-gray hover:text-waterGreen">
-                        <title>External Link</title>
-                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                        <polyline points="15 3 21 3 21 9"></polyline>
-                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                    </svg>
+            <a href="#" class="flex duration-300" id="hover">
+                <div class="flex flex-col justify-between p-6 bg-bgColor3">
+                    <div class="flex justify-between items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-folder w-10 text-waterGreen">
+                            <title>Folder</title>
+                            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-external-link w-6 text-gray hover:text-waterGreen">
+                            <title>External Link</title>
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </div>
+                    <div class="py-5">
+                        <h2 class="mb-4 text-primaryColor text-2xl font-bold leading-7">Integrating Algolia Search with
+                            WordPress Multisite
+                        </h2>
+                        <p class="text-secondaryColor leading-6">Building a custom multisite compatible WordPress plugin
+                            to build global
+                            search with Algolia
+                        </p>
+                    </div>
+                    <div class="flex gap-5 text-secondaryColor font-mono">
+                        <small>Algolia</small>
+                        <small>WordPress</small>
+                        <small>PHP</small>
+                    </div>
                 </div>
-                <div class="py-5">
-                    <h2 class="mb-4 text-primaryColor text-2xl font-bold leading-7">Integrating Algolia Search with
-                        WordPress Multisite
-                    </h2>
-                    <p class="text-secondaryColor leading-6">Building a custom multisite compatible WordPress plugin
-                        to build global
-                        search with Algolia
-                    </p>
-                </div>
-                <div class="flex gap-5 text-secondaryColor font-mono">
-                    <small>Algolia</small>
-                    <small>WordPress</small>
-                    <small>PHP</small>
-                </div>
-            </div>
-        </a>
+            </a>
+        </div>
+    </div>
+    <!-- Contact -->
+    <div class="container flex flex-col items-center justify-between h-screen py-10 md:py-16 px-5 md:px-0">
+        <div class="flex flex-col items-center">
+            <p class="text-waterGreen font-mono md:text-lg"><span>04. </span>What’s Next?</p>
+            <h2 class="py-3 md:py-5 text-primaryColor text-4xl md:text-6xl font-bold">Get In Touch</h2>
+            <p class="max-w-screen-sm text-secondaryColor text-center md:text-xl">Although I’m not currently looking for
+                any new opportunities, my inbox is always open. Whether you have a question or
+                just want to say hi, I’ll try my best to get back to you!</p>
+            <a href="#"
+                class="py-3 px-6 md:py-4 md:px-8 mt-6 md:mt-10 text-waterGreen text-lg border rounded font-mono hover:bg-waterGreenHover">Say
+                Hello</a>
+        </div>
+        <div>
+            <a href="#" class="text-secondaryColor hover:text-waterGreen">
+                Designed & Built by Brittany Chiang
+            </a>
         </div>
     </div>
 </body>
