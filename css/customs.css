@@ -149,7 +149,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-color: #64ffdb3d;
+    background-color: #0a192f8e;
     border-radius: 4px;
 }
 
@@ -194,7 +194,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-color: #64ffdb3d;
+    background-color: #0a192f6f;
 }
 
 #project-img:hover::after {
