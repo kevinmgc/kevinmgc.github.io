@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="assets/img/favicon-k.ico" type="image/x-icon" />
     <title>Kevin Gomez</title>
-    <link rel="stylesheet" href="css/customs-styles.css" />
+    <link rel="stylesheet" href="css/customs.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -116,7 +117,7 @@
     <header class="container flex justify-between items-center h-20 px-5 bg-bgColor z-40">
         <h2 class="text-waterGreen text-4xl font-mono">KG</h2>
         <div class="flex items-center gap-7">
-            <ul class="hidden md:flex gap-7 text-gray text-base tracking-wider">
+            <ul class="hidden md:flex gap-7 text-gray text-base tracking-wider font-mono">
                 <li>
                     <a href="#about" class="hover:text-waterGreen"><span class="text-waterGreen">01. </span>About</a>
                 </li>
@@ -135,8 +136,35 @@
             <a href="https://github.com/kevinmgc"
                 class="hidden md:block text-waterGreen text-base tracking-wider border-[1px] border-waterGreen rounded px-4 py-2 hover:bg-waterGreenHover">Resume</a>
         </div>
-        <div class="w-[40px] h-[40px] border">
-            <div id="responsive-bottom"></div>
+        <!-- Responsive menu -->
+        <div class="md:hidden">
+            <div for="btn_menu" id="flex_column">
+                <div id="btn_span_1"></div>
+                <div id="btn_span_2"></div>
+                <div id="btn_span_3"></div>
+            </div>
+            <ul id="flex_container" class="text-primaryColor font-mono">
+                <li class="flex flex-col items-center">
+                    <div class="text-waterGreen">01.</div>
+                    <a href="#about" class="hover:text-waterGreen">About</a>
+                </li>
+                <li class="flex flex-col items-center">
+                    <div class="text-waterGreen">02.</div>
+                    <a href="#about" class="hover:text-waterGreen">Experience</a>
+                </li>
+                <li class="flex flex-col items-center">
+                    <div class="text-waterGreen">03.</div>
+                    <a href="#about" class="hover:text-waterGreen">Work</a>
+                </li>
+                <li class="flex flex-col items-center">
+                    <div class="text-waterGreen">04.</div>
+                    <a href="#about" class="hover:text-waterGreen">Contact</a>
+                </li>
+                <li>
+                    <a href="https://github.com/kevinmgc"
+                        class="text-waterGreen text-base tracking-wider border-[1px] border-waterGreen rounded px-4 py-2 hover:bg-waterGreenHover">Resume</a>
+                </li>
+            </ul>
         </div>
     </header>
     <!-- Hero -->
@@ -286,17 +314,17 @@
                 </div>
             </div>
             <div
-                class="flex flex-col md:items-end justify-center md:w-2/5 px-5 py-6 md:p-0 bg-[url(assets/img/projectExample.png)] bg-center bg-cover md:bg-none  rounded md:rounded-none">
-                <p class="text-waterGreen font-mono">Featured Project</p>
-                <h3 class="text-primaryColor text-2xl md:text-4xl font-bold whitespace-nowrap">Halcyon Theme</h3>
+                class="flex flex-col md:items-end justify-center md:w-2/5 p-7 md:p-0 bg-[url(assets/img/projectExample.png)] bg-center bg-cover md:bg-none rounded md:rounded-none relative project-overlay overflow-hidden">
+                <p class="text-waterGreen font-mono z-10">Featured Project</p>
+                <h3 class="text-primaryColor text-2xl md:text-4xl font-bold whitespace-nowrap z-10">Halcyon Theme</h3>
                 <div class="md:p-5 my-5 rounded-lg md:min-w-[450px] lg:min-w-[500px] md:bg-bgColor2 z-10">
-                    <p class="text-primaryColor text-base md:text-end">
+                    <p class="text-secondaryColor text-base md:text-end">
                         A minimal, dark blue theme for VS Code, Sublime Text,
                         Atom, iTerm, and more. Available on Visual Studio Marketplace,
                         Package Control, Atom Package Manager, and npm.</p>
                 </div>
                 <div class="z-10">
-                    <ul class="flex flex-wrap whitespace-nowrap text-primaryColor text-lg leading-tight">
+                    <ul class="flex flex-wrap whitespace-nowrap text-secondaryColor text-lg leading-tight">
                         <li class="mr-5 leading-8">VS Code</li>
                         <li class="mr-5 leading-8">Sublime Text</li>
                         <li class="mr-5 leading-8">Atom</li>
@@ -304,10 +332,10 @@
                         <li class="mr-5 leading-8">Hyper</li>
                     </ul>
                 </div>
-                <div class="mt-2 md:mt-4 flex items-center gap-4">
+                <div class="mt-2 md:mt-4 flex items-center gap-4 z-10">
                     <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="feather feather-github w-6 text-gray hover:text-waterGreen hover:-translate-y-1 duration-300">
                             <title>GitHub</title>
                             <path
@@ -316,8 +344,8 @@
                         </svg>
                     </a>
                     <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="feather feather-external-link w-6 text-gray hover:text-waterGreen hover:-translate-y-1 duration-300">
                             <title>External Link</title>
                             <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
@@ -331,17 +359,17 @@
         <!-- Project 2 -->
         <div class="flex py-5 md:py-16">
             <div
-                class="flex flex-col items-start justify-center md:w-2/5 p-5 md:p-0 bg-[url(assets/img/projectExample.png)] bg-center bg-cover md:bg-none  rounded md:rounded-none">
-                <p class="text-waterGreen font-mono">Featured Project</p>
-                <h3 class="text-primaryColor text-2xl md:text-4xl font-bold whitespace-nowrap">Halcyon Theme</h3>
+                class="flex flex-col items-start justify-center md:w-2/5 p-7 md:p-0 bg-[url(assets/img/projectExample.png)] bg-center bg-cover md:bg-none  rounded md:rounded-none relative project-overlay overflow-hidden">
+                <p class="text-waterGreen font-mono z-10">Featured Project</p>
+                <h3 class="text-primaryColor text-2xl md:text-4xl font-bold whitespace-nowrap z-10">Halcyon Theme</h3>
                 <div class="md:p-5 my-5 rounded-lg md:min-w-[450px] lg:min-w-[500px] md:bg-bgColor2 z-10">
-                    <p class="text-primaryColor text-base text-start">
+                    <p class="text-secondaryColor text-base text-start">
                         A minimal, dark blue theme for VS Code, Sublime Text,
                         Atom, iTerm, and more. Available on Visual Studio Marketplace,
                         Package Control, Atom Package Manager, and npm.</p>
                 </div>
                 <div class="z-10">
-                    <ul class="flex flex-wrap whitespace-nowrap text-primaryColor text-lg leading-tight">
+                    <ul class="flex flex-wrap whitespace-nowrap text-secondaryColor text-lg leading-tight">
                         <li class="mr-5 leading-8">VS Code</li>
                         <li class="mr-5 leading-8">Sublime Text</li>
                         <li class="mr-5 leading-8">Atom</li>
@@ -349,7 +377,7 @@
                         <li class="mr-5 leading-8">Hyper</li>
                     </ul>
                 </div>
-                <div class="mt-2 md:mt-4 flex items-center gap-4">
+                <div class="mt-2 md:mt-4 flex items-center gap-4 z-10">
                     <a href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -386,17 +414,17 @@
                 </div>
             </div>
             <div
-                class="flex flex-col md:items-end justify-center md:w-2/5 p-5 md:p-0 bg-[url(assets/img/projectExample.png)] bg-center bg-cover md:bg-none  rounded md:rounded-none">
-                <p class="text-waterGreen font-mono">Featured Project</p>
-                <h3 class="text-primaryColor text-2xl md:text-4xl font-bold whitespace-nowrap">Halcyon Theme</h3>
+                class="flex flex-col md:items-end justify-center md:w-2/5 p-7 md:p-0 bg-[url(assets/img/projectExample.png)] bg-center bg-cover md:bg-none  rounded md:rounded-none relative project-overlay overflow-hidden">
+                <p class="text-waterGreen font-mono z-10">Featured Project</p>
+                <h3 class="text-primaryColor text-2xl md:text-4xl font-bold whitespace-nowrap z-10">Halcyon Theme</h3>
                 <div class="md:p-5 my-5 rounded-lg md:min-w-[450px] lg:min-w-[500px] md:bg-bgColor2 z-10">
-                    <p class="text-primaryColor text-base md:text-end">
+                    <p class="text-secondaryColor text-base md:text-end">
                         A minimal, dark blue theme for VS Code, Sublime Text,
                         Atom, iTerm, and more. Available on Visual Studio Marketplace,
                         Package Control, Atom Package Manager, and npm.</p>
                 </div>
                 <div class="z-10">
-                    <ul class="flex flex-wrap whitespace-nowrap text-primaryColor text-lg leading-tight">
+                    <ul class="flex flex-wrap whitespace-nowrap text-secondaryColor text-lg leading-tight">
                         <li class="mr-5 leading-8">VS Code</li>
                         <li class="mr-5 leading-8">Sublime Text</li>
                         <li class="mr-5 leading-8">Atom</li>
@@ -404,7 +432,7 @@
                         <li class="mr-5 leading-8">Hyper</li>
                     </ul>
                 </div>
-                <div class="mt-2 md:mt-4 flex items-center gap-4">
+                <div class="mt-2 md:mt-4 flex items-center gap-4 z-10">
                     <a href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
