@@ -1,50 +1,77 @@
 /* SF Mono font */
 @font-face {
-    font-family: "SF Mono Regular";
+    font-family: "SFMono";
     font-style: normal;
-    font-weight: normal;
-    src: local("SF Mono Regular"),
-        url("../assets/fonts/SF-Mono/SFMonoRegular.woff") format("woff");
+    font-weight: 400;
+    src: 
+        url("../fonts/SF-Mono/SFMonoRegular.woff") format("woff");
 }
 
 @font-face {
-    font-family: "SF Mono Light";
+    font-family: "SFMono";
     font-style: normal;
-    font-weight: normal;
-    src: local("SF Mono Light"),
-        url("../assets/fonts/SF-Mono/SFMonoLight.woff") format("woff");
+    font-weight: 300;
+    src: 
+        url("../fonts/SF-Mono/SFMonoLight.woff") format("woff");
 }
 
 @font-face {
-    font-family: "SF Mono Medium";
+    font-family: "SFMono";
     font-style: normal;
-    font-weight: normal;
-    src: local("SF Mono Medium"),
-        url("../assets/fonts/SF-Mono/SFMonoMedium.woff") format("woff");
+    font-weight: 500;
+    src: 
+        url("../fonts/SF-Mono/SFMonoMedium.woff") format("woff");
 }
 
 @font-face {
-    font-family: "SF Mono Semibold";
+    font-family: "SFMono";
     font-style: normal;
-    font-weight: normal;
-    src: local("SF Mono Semibold"),
-        url("../assets/fonts/SF-Mono/SFMonoSemibold.woff") format("woff");
+    font-weight: 600;
+    src: 
+        url("../fonts/SF-Mono/SFMonoSemibold.woff") format("woff");
 }
 
 @font-face {
-    font-family: "SF Mono Bold";
+    font-family: "SFMono";
     font-style: normal;
-    font-weight: normal;
-    src: local("SF Mono Bold"),
-        url("../assets/fonts/SF-Mono/SFMonoBold.woff") format("woff");
+    font-weight: 700;
+    src: url("../fonts/SF-Mono/SFMonoBold.woff") format("woff");
 }
 
 @font-face {
-    font-family: "SF Mono Heavy";
+    font-family: "SFMono";
     font-style: normal;
-    font-weight: normal;
-    src: local("SF Mono Heavy"),
-        url("../assets/fonts/SF-Mono/SFMonoHeavy.woff") format("woff");
+    font-weight: 800;
+    src: 
+        url("../fonts/SF-Mono/SFMonoHeavy.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Calibre";
+    font-style: normal;
+    font-weight: 500;
+    src: 
+        url("../fonts/Calibre/Calibre-Medium.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Calibre";
+    font-style: normal;
+    font-weight: 500;
+    src: 
+        url("../fonts/Calibre/Calibre-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Calibre";
+    font-style: normal;
+    font-weight: 600;
+    src: 
+        url("../fonts/Calibre/Calibre-Semibold.woff2") format("woff2");
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* Text orientation right link */
@@ -204,4 +231,8 @@
 /* Projects WordPress box hover */
 #hover:hover {
     transform: translateY(-5px);
+}
+
+.tab-content {
+    display: none;
 }
