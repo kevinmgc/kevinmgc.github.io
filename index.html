@@ -36,7 +36,7 @@
     </script>
 </head>
 
-<body class="bg-bgColor flex flex-col items-center overflow-hidden">
+<body class="bg-bgColor flex flex-col items-center overflow-x-hidden">
     <!-- START RIGHT EMAIL -->
     <div class="hidden md:flex fixed bottom-0 right-10 lg:right-14 flex-col items-center">
         <p>
@@ -115,7 +115,7 @@
                         </span>Hablemos</a>
                 </li>
             </ul>
-            <a href="https://github.com/kevinmgc" target="_blank" 
+            <a href="https://github.com/kevinmgc" target="_blank"
                 class="hidden lg:block text-waterGreen text-sm font-light tracking-wider border-[1px] border-waterGreen rounded px-4 py-2 hover:bg-waterGreenHover font-mono">GitHub</a>
         </div>
         <!-- Responsive menu -->
@@ -143,7 +143,7 @@
                     <a href="#about" class="hover:text-waterGreen">Contact</a>
                 </li>
                 <li>
-                    <a href="https://github.com/kevinmgc" target="_blank" 
+                    <a href="https://github.com/kevinmgc" target="_blank"
                         class="text-waterGreen text-base tracking-wider border-[1px] border-waterGreen rounded px-4 py-2 hover:bg-waterGreenHover">GitHub</a>
                 </li>
             </ul>
@@ -176,7 +176,8 @@
 
     <!-- START ABOUT ME -->
     <section
-        class="flex flex-col lg:flex-row items-center justify-center container px-4 md:px-24 lg:px-40 py-10 md:py-16" id="about">
+        class="flex flex-col lg:flex-row items-center justify-center container px-4 md:px-24 lg:px-40 py-10 md:py-16"
+        id="about">
         <div class="lg:w-3/5">
             <div class="flex items-center gap-5 mb-5">
                 <h2 class="text-primaryColor text-2xl md:text-4xl font-bold whitespace-nowrap">
@@ -316,17 +317,19 @@
                 </div>
             </div>
             <div
-                class="flex flex-col md:items-end justify-center md:w-2/5 p-7 md:p-0 bg-[url(assets/img/project-html-css-1.png)] bg-center bg-cover md:bg-none rounded md:rounded-none relative project-overlay overflow-hidden md:overflow-visible">
-                <p class="text-waterGreen font-mono z-10 mb-2">Proyecto destacado</p>
-                <h3 class="text-primaryColor text-2xl md:text-4xl font-bold whitespace-nowrap z-10">Landing page</h3>
-                <div class="md:p-5 my-5 rounded-lg md:min-w-[450px] lg:min-w-[500px] md:bg-bgColor2 z-10">
-                    <p class="text-secondaryColor text-base md:text-end">
-                        Landing Page echa desde un diseño en figma con HTML y CSS basico</p>
+                class="flex flex-col md:items-end justify-center md:w-2/5 p-7 md:p-0 bg-[url(assets/img/project-html-css-1.png)] bg-center bg-cover md:bg-none rounded md:rounded-none relative project-overlay overflow-hidden md:overflow-visible min-w-full md:min-w-0">
+                <p class="text-waterGreen font-mono z-10 mb-2">Landing</p>
+                <h3 class="text-primaryColor text-2xl md:text-4xl font-bold whitespace-nowrap z-10">OutSchool</h3>
+                <div class="md:p-5 my-5 rounded-lg md:min-w-[450px] lg:min-w-[500px] md:bg-bgColor2 z-10 min-w-full">
+                    <p class="text-primaryColor md:text-secondaryColor text-base md:text-end">
+                        Landing Page desarrollando en HTML y CSS un diseño de Figma Community. <a
+                            class="text-waterGreen hover:underline"
+                            href="https://www.figma.com/community/file/1190190345547687730"
+                            target="_blank">OutSchool</a> by Mohamed Fazil.
+                    </p>
                 </div>
                 <div class="z-10">
-                    <ul
-                        class="flex flex-wrap whitespace-nowrap text-secondaryColor text-lg leading-tight">
-                        <li class="mr-5 leading-8">VS Code</li>
+                    <ul class="flex flex-wrap whitespace-nowrap text-secondaryColor text-lg leading-tight">
                         <li class="mr-5 leading-8">Figma</li>
                         <li class="mr-5 leading-8">HTML</li>
                         <li class="mr-5 leading-8">CSS</li>
@@ -359,18 +362,17 @@
         <!-- Project 2 -->
         <div class="flex py-5 md:py-16">
             <div
-                class="flex flex-col items-start justify-center md:w-2/5 p-7 md:p-0 bg-[url(assets/img/project-html-css-2.png)] bg-center bg-cover md:bg-none  rounded md:rounded-none relative project-overlay overflow-hidden md:overflow-visible">
-                <p class="text-waterGreen font-mono z-10 mb-2">Proyecto destacado</p>
-                <h3 class="text-primaryColor text-2xl md:text-4xl font-bold whitespace-nowrap z-10">Twitter profile UI</h3>
-                <div class="md:p-5 my-5 rounded-lg md:min-w-[450px] lg:min-w-[500px] md:bg-bgColor2 z-10">
-                    <p class="text-secondaryColor text-base text-start">
-                        Una copia visual del perfil de la NASA en Twitter echo con HTML y CSS con la metodologia BEM</p>
+                class="flex flex-col items-start justify-center md:w-2/5 p-7 md:p-0 bg-[url(assets/img/project-html-css-2.png)] bg-center bg-cover md:bg-none  rounded md:rounded-none relative project-overlay overflow-hidden md:overflow-visible  min-w-full md:min-w-0">
+                <p class="text-waterGreen font-mono z-10 mb-2">Web App</p>
+                <h3 class="text-primaryColor text-2xl md:text-4xl font-bold whitespace-nowrap z-10">Twitter profile UI
+                </h3>
+                <div class="md:p-5 my-5 rounded-lg md:min-w-[450px] lg:min-w-[500px] md:bg-bgColor2 z-10  min-w-full">
+                    <p class="text-primaryColor md:text-secondaryColor text-base text-start">
+                        Un clon de la interfaz de twitter, usando el perfil de la NASA como modelo. Recreado con HTML y
+                        CSS, aplicando la metodologia BEM.</p>
                 </div>
                 <div class="z-10">
-                    <ul
-                        class="flex flex-wrap whitespace-nowrap text-secondaryColor text-lg leading-tight">
-                        <li class="mr-5 leading-8">VS Code</li>
-                        <li class="mr-5 leading-8">Perfil de la NASA en Twitter</li>
+                    <ul class="flex flex-wrap whitespace-nowrap text-secondaryColor text-lg leading-tight">
                         <li class="mr-5 leading-8">HTML</li>
                         <li class="mr-5 leading-8">CSS</li>
                         <li class="mr-5 leading-8">BEM</li>
@@ -413,24 +415,24 @@
                 </div>
             </div>
             <div
-                class="flex flex-col md:items-end justify-center md:w-2/5 p-7 md:p-0 bg-[url(assets/img/project-html-css-3.png)] bg-center bg-cover md:bg-none  rounded md:rounded-none relative project-overlay overflow-hidden md:overflow-visible">
-                <p class="text-waterGreen font-mono z-10 mb-2">Proyecto destacado</p>
+                class="flex flex-col md:items-end justify-center md:w-2/5 p-7 md:p-0 bg-[url(assets/img/project-html-css-3.png)] bg-center bg-cover md:bg-none  rounded md:rounded-none relative project-overlay overflow-hidden md:overflow-visible  min-w-full md:min-w-0">
+                <p class="text-waterGreen font-mono z-10 mb-2">Landing</p>
                 <h3 class="text-primaryColor text-2xl md:text-4xl font-bold whitespace-nowrap z-10">Portafolio</h3>
-                <div class="md:p-5 my-5 rounded-lg md:min-w-[450px] lg:min-w-[500px] md:bg-bgColor2 z-10">
-                    <p class="text-secondaryColor text-base md:text-end">
-                        Un portafolio minimalista echo con HTML, CSS y Tailwind</p>
+                <div class="md:p-5 my-5 rounded-lg md:min-w-[450px] lg:min-w-[500px] md:bg-bgColor2 z-10  min-w-full">
+                    <p class="text-primaryColor md:text-secondaryColor text-base md:text-end">
+                        Portafolio minimalista y moderno basado en la web de <a class="text-waterGreen hover:underline"
+                            href="https://brittanychiang.com/" target="_blank">Brittany Chiang</a>. Desarrollado
+                        enteramente con la librería Tailwind.</p>
                 </div>
                 <div class="z-10">
-                    <ul
-                        class="flex flex-wrap whitespace-nowrap text-secondaryColor text-lg leading-tight">
-                        <li class="mr-5 leading-8">VS Code</li>
+                    <ul class="flex flex-wrap whitespace-nowrap text-secondaryColor text-lg leading-tight">
                         <li class="mr-5 leading-8">HTML</li>
                         <li class="mr-5 leading-8">CSS</li>
                         <li class="mr-5 leading-8">Tailwind</li>
                     </ul>
                 </div>
                 <div class="mt-2 md:mt-4 flex items-center gap-4 z-10">
-                    <a href="#">
+                    <a href="https://github.com/kevinmgc/kevinmgc.github.io" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="feather feather-github w-6 text-gray hover:text-waterGreen hover:-translate-y-1 duration-300">
@@ -462,10 +464,11 @@
             <h2 class="text-primaryColor text-2xl md:text-4xl font-bold">Proyectos Profesionales</h2>
             <p class="text-waterGreen font-mono mt-4">Wordpress & Elementor</p>
         </div>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 auto-rows-max gap-4 py-10 md:py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-max gap-4 py-10 md:py-16">
             <!-- Project 1 -->
-            <a href="https://wordpress-587680-3170571.cloudwaysapps.com/" target="_blank" class="flex duration-300" id="hover">
-                <div class="flex flex-col justify-between p-6 bg-bgColor3">
+            <a href="https://wordpress-587680-3170571.cloudwaysapps.com/" target="_blank" class="flex duration-300"
+                id="hover">
+                <div class="flex flex-col justify-between p-6 bg-bgColor3 min-w-full">
                     <div class="flex justify-between items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
@@ -486,21 +489,19 @@
                     <div class="py-5">
                         <h2 class="mb-4 text-primaryColor text-2xl font-bold leading-7">Lands in Love
                         </h2>
-                        <p class="text-secondaryColor leading-6">Building a custom multisite compatible WordPress plugin
-                            to build global
-                            search with Algolia
+                        <p class="text-secondaryColor leading-6">Hotel & Resort vegano, rodeado de naturaleza, con circuitos de ecoaventura, localizado en Alajuela, Costa Rica.
                         </p>
                     </div>
                     <div class="flex gap-5 text-secondaryColor font-mono">
-                        <small>Algolia</small>
                         <small>WordPress</small>
-                        <small>PHP</small>
+                        <small>Elementor</small>
+                        <small>JetTabs</small>
                     </div>
                 </div>
             </a>
             <!-- Project 2 -->
             <a href="https://roselinnphotography.com/home/" target="_blank" class="flex duration-300" id="hover">
-                <div class="flex flex-col justify-between p-6 bg-bgColor3">
+                <div class="flex flex-col justify-between p-6 bg-bgColor3 min-w-full">
                     <div class="flex justify-between items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
@@ -521,21 +522,20 @@
                     <div class="py-5">
                         <h2 class="mb-4 text-primaryColor text-2xl font-bold leading-7">Roselinn Photography
                         </h2>
-                        <p class="text-secondaryColor leading-6">Building a custom multisite compatible WordPress plugin
-                            to build global
-                            search with Algolia
+                        <p class="text-secondaryColor leading-6">Roselinn es una fotógrafa enfocada en life style, bodas y bienes raíces ubicada en Costa Rica. Su web incorpora una tienda para comprar cuadros de paisajes.
                         </p>
                     </div>
-                    <div class="flex gap-5 text-secondaryColor font-mono">
-                        <small>Algolia</small>
+                    <div class="flex flex-wrap gap-5 text-secondaryColor font-mono">
                         <small>WordPress</small>
-                        <small>PHP</small>
+                        <small>Elementor</small>
+                        <small>WooCommerce</small>
+                        <small>JetWooBuilder</small>
                     </div>
                 </div>
             </a>
             <!-- Project 3 -->
             <a href="https://nadabrahmahealingcenter.com/" class="flex duration-300" target="_blank" id="hover">
-                <div class="flex flex-col justify-between p-6 bg-bgColor3">
+                <div class="flex flex-col justify-between p-6 bg-bgColor3 min-w-full">
                     <div class="flex justify-between items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
@@ -554,23 +554,22 @@
                         </svg>
                     </div>
                     <div class="py-5">
-                        <h2 class="mb-4 text-primaryColor text-2xl font-bold leading-7">Nada Brahma
+                        <h2 class="mb-4 text-primaryColor text-2xl font-bold leading-7">Nada Brahma Healing Center
                         </h2>
-                        <p class="text-secondaryColor leading-6">Building a custom multisite compatible WordPress plugin
-                            to build global
-                            search with Algolia
+                        <p class="text-secondaryColor leading-6">Retiro espiritual ubicado en Costa Rica rodeado de naturaleza basado en medicina natural, rituales ancestrales, y aromaterapia.
                         </p>
                     </div>
-                    <div class="flex gap-5 text-secondaryColor font-mono">
-                        <small>Algolia</small>
+                    <div class="flex flex-wrap gap-5 text-secondaryColor font-mono">
                         <small>WordPress</small>
-                        <small>PHP</small>
+                        <small>Elementor</small>
+                        <small>JeElements</small>
+                        <small>JetTricks</small>
                     </div>
                 </div>
             </a>
             <!-- Project 4 -->
             <a href="https://dushibakery.com/" target="_blank" class="flex duration-300" id="hover">
-                <div class="flex flex-col justify-between p-6 bg-bgColor3">
+                <div class="flex flex-col justify-between p-6 bg-bgColor3 min-w-full">
                     <div class="flex justify-between items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
@@ -591,21 +590,21 @@
                     <div class="py-5">
                         <h2 class="mb-4 text-primaryColor text-2xl font-bold leading-7">Dushi Bakery
                         </h2>
-                        <p class="text-secondaryColor leading-6">Building a custom multisite compatible WordPress plugin
-                            to build global
-                            search with Algolia
+                        <p class="text-secondaryColor leading-6">
+                            Pastelería y cafetería de amplia trayectoria ubicado en San José, Costa Rica. Cuenta con menú PDF y sistema de reservas
+                            basado en FoodBooking.
                         </p>
                     </div>
                     <div class="flex gap-5 text-secondaryColor font-mono">
-                        <small>Algolia</small>
                         <small>WordPress</small>
-                        <small>PHP</small>
+                        <small>FoodBooking</small>
+                        <small>Elementor</small>
                     </div>
                 </div>
             </a>
             <!-- Project 5 -->
             <a href="https://serenityspacr.com/" target="_blank" class="flex duration-300" id="hover">
-                <div class="flex flex-col justify-between p-6 bg-bgColor3">
+                <div class="flex flex-col justify-between p-6 bg-bgColor3 min-w-full">
                     <div class="flex justify-between items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
@@ -626,21 +625,19 @@
                     <div class="py-5">
                         <h2 class="mb-4 text-primaryColor text-2xl font-bold leading-7">Serenity Spa
                         </h2>
-                        <p class="text-secondaryColor leading-6">Building a custom multisite compatible WordPress plugin
-                            to build global
-                            search with Algolia
+                        <p class="text-secondaryColor leading-6">Página comercial del novedoso spá ubicado en el Hotel Villa Caletas, frente a las costas del Pacífico de Costa Rica.
                         </p>
                     </div>
                     <div class="flex gap-5 text-secondaryColor font-mono">
-                        <small>Algolia</small>
                         <small>WordPress</small>
-                        <small>PHP</small>
+                        <small>Elementor</small>
+                        <small>JetTabs</small>
                     </div>
                 </div>
             </a>
             <!-- Project 6 -->
             <a href="https://paulaplayer.com/" target="_blank" class="flex duration-300" id="hover">
-                <div class="flex flex-col justify-between p-6 bg-bgColor3">
+                <div class="flex flex-col justify-between p-6 bg-bgColor3 min-w-full">
                     <div class="flex justify-between items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
@@ -661,15 +658,13 @@
                     <div class="py-5">
                         <h2 class="mb-4 text-primaryColor text-2xl font-bold leading-7">Paula Player
                         </h2>
-                        <p class="text-secondaryColor leading-6">Building a custom multisite compatible WordPress plugin
-                            to build global
-                            search with Algolia
+                        <p class="text-secondaryColor leading-6">Portafolio web de la fotógrafa colombiana Paula Player, quien desempeña su trabajo en Carolina del Sur, USA.
                         </p>
                     </div>
-                    <div class="flex gap-5 text-secondaryColor font-mono">
-                        <small>Algolia</small>
+                    <div class="flex flex-wrap gap-5 text-secondaryColor font-mono">
                         <small>WordPress</small>
-                        <small>PHP</small>
+                        <small>Elementor</small>
+                        <small>JetEngine</small>
                     </div>
                 </div>
             </a>
@@ -678,12 +673,14 @@
     <!-- END PROJECTS WORDPRESS -->
 
     <!-- START CONTACT -->
-    <section class="container flex flex-col items-center justify-between h-screen py-10 md:py-16 px-5 md:px-0" id="contact">
+    <section class="container flex flex-col items-center justify-between h-screen py-10 md:py-16 px-5 md:px-0"
+        id="contact">
         <div class="flex flex-col items-center">
             <p class="text-waterGreen font-mono md:text-lg"><span>04. </span>Contacto</p>
             <h2 class="py-3 md:py-5 text-primaryColor text-4xl md:text-6xl font-bold">¡Hablemos!</h2>
             <p class="max-w-screen-sm text-secondaryColor text-center md:text-xl">
-                En este momento me encuentro en búsqueda laboral activa. Así que no dudes en escribirme, estaré encantado de escuchar nuevos proyectos en los cuales colaborar. 
+                En este momento me encuentro en búsqueda laboral activa. Así que no dudes en escribirme, estaré
+                encantado de escuchar nuevos proyectos en los cuales colaborar.
             </p>
             <a href="mailto:kevingomez9730@gmail.com"
                 class="py-3 px-6 md:py-4 md:px-8 mt-6 md:mt-10 text-waterGreen text-base font-light border rounded font-mono hover:bg-waterGreenHover">Contacto</a>
