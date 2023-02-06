@@ -9,6 +9,7 @@
     <title>Kevin Gomez</title>
     <link rel="stylesheet" href="assets/css/customs.css" />
     <link rel="stylesheet" href="assets/css/utilities.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- TAILWIND CONFIG -->
     <script>
@@ -37,19 +38,10 @@
 </head>
 
 <body class="bg-bgColor flex flex-col items-center overflow-x-hidden">
-    <!-- START RIGHT EMAIL -->
-    <div class="hidden md:flex fixed bottom-0 right-10 lg:right-14 flex-col items-center">
-        <p>
-            <a href="mailto:kevingomez9730@gmail.com"
-                class="text-white text-gray font-mono font-light text-sm hover:text-waterGreen hover:-translate-y-1 duration-300"
-                id="text-orientation">kevingomez9730@gmail.com</a>
-        </p>
-        <div class="pt-24 bg-white w-[1px] mt-5 bg-gray"></div>
-    </div>
-    <!-- END RIGHT EMAIL -->
 
     <!-- START LEFT ICONS -->
-    <div class="hidden md:flex fixed bottom-0 left-10 lg:left-14 flex-col items-center">
+    <div
+        class="hidden md:flex fixed bottom-0 left-10 lg:left-14 flex-col items-center animate__animated animate__fadeInUp duration-12">
         <ul class="flex flex-col gap-7">
             <!-- github -->
             <li>
@@ -95,28 +87,40 @@
     </div>
     <!-- END LEFT ICONS -->
 
+    <!-- START RIGHT EMAIL -->
+    <div
+        class="hidden md:flex fixed bottom-0 right-10 lg:right-14 flex-col items-center animate__animated animate__fadeInUp  duration-11">
+        <p>
+            <a href="mailto:kevingomez9730@gmail.com"
+                class="text-white text-gray font-mono font-light text-sm hover:text-waterGreen hover:-translate-y-1 duration-300"
+                id="text-orientation">kevingomez9730@gmail.com</a>
+        </p>
+        <div class="pt-24 bg-white w-[1px] mt-5 bg-gray"></div>
+    </div>
+    <!-- END RIGHT EMAIL -->
+
     <!-- START HEADER -->
-    <header class="container flex justify-between items-center h-20 px-5 bg-bgColor z-40">
+    <header class="container flex justify-between items-center h-20 px-5 bg-bgColor z-40 sticky top-0">
         <h2 class="text-waterGreen text-4xl font-mono">KG</h2>
         <div class="flex items-center gap-7">
             <ul class="hidden lg:flex gap-7 text-gray text-base tracking-wider font-mono font-light">
-                <li>
+                <li class="animate__animated animate__fadeInDown duration-1">
                     <a href="#about" class="hover:text-waterGreen"><span class="text-waterGreen">01. </span>Conóceme</a>
                 </li>
-                <li>
+                <li class="animate__animated animate__fadeInDown duration-2">
                     <a href="#specialties" class="hover:text-waterGreen"><span class="text-waterGreen">02.
                         </span>Especialidades</a>
                 </li>
-                <li>
+                <li class="animate__animated animate__fadeInDown duration-3">
                     <a href="#work" class="hover:text-waterGreen"><span class="text-waterGreen">03. </span>Trabajos</a>
                 </li>
-                <li>
+                <li class="animate__animated animate__fadeInDown duration-4">
                     <a href="#contact" class="hover:text-waterGreen"><span class="text-waterGreen">04.
                         </span>Hablemos</a>
                 </li>
             </ul>
             <a href="https://github.com/kevinmgc" target="_blank"
-                class="hidden lg:block text-waterGreen text-sm font-light tracking-wider border-[1px] border-waterGreen rounded px-4 py-2 hover:bg-waterGreenHover font-mono">GitHub</a>
+                class="hidden lg:block text-waterGreen text-sm font-light tracking-wider border-[1px] border-waterGreen rounded px-4 py-2 hover:bg-waterGreenHover font-mono animate__animated animate__fadeInDown duration-5">GitHub</a>
         </div>
         <!-- Responsive menu -->
         <div class="lg:hidden">
@@ -154,22 +158,24 @@
     <!-- START HERO -->
     <section
         class="container flex flex-col items-start justify-center py-5 md:py-16 lg:h-[80vh] px-5 md:px-24 lg:px-32">
-        <p class="text-waterGreen text-lg tracking-wide font-mono">
+        <p class="text-waterGreen text-lg tracking-wide font-mono animate__animated animate__fadeInUp  duration-6">
             Hola, yo soy
         </p>
-        <h1 class="text-primaryColor text-4xl md:text-6xl lg:text-7xl font-bold mt-1 md:mt-4">
+        <h1
+            class="text-primaryColor text-4xl md:text-6xl lg:text-7xl font-bold mt-1 md:mt-4 animate__animated animate__fadeInUp  duration-7">
             Kevin Gomez.
         </h1>
-        <h2 class="text-secondaryColor text-4xl md:text-6xl lg:text-7xl font-bold mb-2 md:mb-6">
+        <h2
+            class="text-secondaryColor text-4xl md:text-6xl lg:text-7xl font-bold mb-2 md:mb-6 animate__animated animate__fadeInUp  duration-8">
             Construyo cosas con Elementor.
         </h2>
-        <p class="text-secondaryColor text-lg max-w-[500px]">
+        <p class="text-secondaryColor text-lg max-w-[500px] animate__animated animate__fadeInUp  duration-9">
             Soy un apasionado del desarrollo web en constante crecimiento. Especializado en desarrollar sitios webs con
             WordPress, Elementor (y ocasionalmente en código), siempre con la filosofía <span
                 class="text-waterGreen">pixel perfect.</span>
         </p>
         <a href="#work"
-            class="py-3 px-6 md:py-4 md:px-8 mt-6 md:mt-10 text-waterGreen text-base font-light border rounded font-mono hover:bg-waterGreenHover">Conoce
+            class="py-3 px-6 md:py-4 md:px-8 mt-6 md:mt-10 text-waterGreen text-base font-light border rounded font-mono hover:bg-waterGreenHover animate__animated animate__fadeInUp  duration-10">Conoce
             mis proyectos</a>
     </section>
     <!-- END HERO -->
@@ -224,7 +230,7 @@
             <div class="bg-lightGray h-px w-full"></div>
         </div>
         <div class="pt-5 md:pt-7 flex flex-col md:flex-row">
-            <div class="md:w-[145px]">
+            <div class="md:w-[130px]">
                 <ul id="scroll"
                     class="text-waterGreen font-mono text-sm font-light flex md:flex-col overflow-x-auto md:border-l-2 border-lightGray">
                     <li>
@@ -489,7 +495,8 @@
                     <div class="py-5">
                         <h2 class="mb-4 text-primaryColor text-2xl font-bold leading-7">Lands in Love
                         </h2>
-                        <p class="text-secondaryColor leading-6">Hotel & Resort vegano, rodeado de naturaleza, con circuitos de ecoaventura, localizado en Alajuela, Costa Rica.
+                        <p class="text-secondaryColor leading-6">Hotel & Resort vegano, rodeado de naturaleza, con
+                            circuitos de ecoaventura, localizado en Alajuela, Costa Rica.
                         </p>
                     </div>
                     <div class="flex gap-5 text-secondaryColor font-mono">
@@ -522,7 +529,9 @@
                     <div class="py-5">
                         <h2 class="mb-4 text-primaryColor text-2xl font-bold leading-7">Roselinn Photography
                         </h2>
-                        <p class="text-secondaryColor leading-6">Roselinn es una fotógrafa enfocada en life style, bodas y bienes raíces ubicada en Costa Rica. Su web incorpora una tienda para comprar cuadros de paisajes.
+                        <p class="text-secondaryColor leading-6">Roselinn es una fotógrafa enfocada en life style, bodas
+                            y bienes raíces ubicada en Costa Rica. Su web incorpora una tienda para comprar cuadros de
+                            paisajes.
                         </p>
                     </div>
                     <div class="flex flex-wrap gap-5 text-secondaryColor font-mono">
@@ -556,7 +565,8 @@
                     <div class="py-5">
                         <h2 class="mb-4 text-primaryColor text-2xl font-bold leading-7">Nada Brahma Healing Center
                         </h2>
-                        <p class="text-secondaryColor leading-6">Retiro espiritual ubicado en Costa Rica rodeado de naturaleza basado en medicina natural, rituales ancestrales, y aromaterapia.
+                        <p class="text-secondaryColor leading-6">Retiro espiritual ubicado en Costa Rica rodeado de
+                            naturaleza basado en medicina natural, rituales ancestrales, y aromaterapia.
                         </p>
                     </div>
                     <div class="flex flex-wrap gap-5 text-secondaryColor font-mono">
@@ -591,7 +601,8 @@
                         <h2 class="mb-4 text-primaryColor text-2xl font-bold leading-7">Dushi Bakery
                         </h2>
                         <p class="text-secondaryColor leading-6">
-                            Pastelería y cafetería de amplia trayectoria ubicado en San José, Costa Rica. Cuenta con menú PDF y sistema de reservas
+                            Pastelería y cafetería de amplia trayectoria ubicado en San José, Costa Rica. Cuenta con
+                            menú PDF y sistema de reservas
                             basado en FoodBooking.
                         </p>
                     </div>
@@ -625,7 +636,8 @@
                     <div class="py-5">
                         <h2 class="mb-4 text-primaryColor text-2xl font-bold leading-7">Serenity Spa
                         </h2>
-                        <p class="text-secondaryColor leading-6">Página comercial del novedoso spá ubicado en el Hotel Villa Caletas, frente a las costas del Pacífico de Costa Rica.
+                        <p class="text-secondaryColor leading-6">Página comercial del novedoso spá ubicado en el Hotel
+                            Villa Caletas, frente a las costas del Pacífico de Costa Rica.
                         </p>
                     </div>
                     <div class="flex gap-5 text-secondaryColor font-mono">
@@ -658,7 +670,8 @@
                     <div class="py-5">
                         <h2 class="mb-4 text-primaryColor text-2xl font-bold leading-7">Paula Player
                         </h2>
-                        <p class="text-secondaryColor leading-6">Portafolio web de la fotógrafa colombiana Paula Player, quien desempeña su trabajo en Carolina del Sur, USA.
+                        <p class="text-secondaryColor leading-6">Portafolio web de la fotógrafa colombiana Paula Player,
+                            quien desempeña su trabajo en Carolina del Sur, USA.
                         </p>
                     </div>
                     <div class="flex flex-wrap gap-5 text-secondaryColor font-mono">

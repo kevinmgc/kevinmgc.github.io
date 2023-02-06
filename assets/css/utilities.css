@@ -11,3 +11,51 @@
         pointer-events: none;
     }
 }
+
+.duration-1 {
+    animation-duration: 0.5s !important;
+}
+
+.duration-2 {
+    animation-duration: 1s !important;
+}
+
+.duration-3 {
+    animation-duration: 1.2s !important;
+}
+
+.duration-4 {
+    animation-duration: 1.4s !important;
+}
+
+.duration-5 {
+    animation-duration: 1.6s !important;
+}
+
+.duration-6 {
+    animation-duration: 1.8s !important;
+}
+
+.duration-7 {
+    animation-duration: 2s !important;
+}
+
+.duration-8 {
+    animation-duration: 2.2s !important;
+}
+
+.duration-9 {
+    animation-duration: 2.4s !important;
+}
+
+.duration-10 {
+    animation-duration: 2.6s !important;
+}
+
+.duration-11 {
+    animation-duration: 3s !important;
+}
+
+.duration-12 {
+    animation-duration: 3.2s !important;
+}
